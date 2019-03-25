@@ -1,6 +1,46 @@
 <!DOCTYPE html>
-<html>
+  <html>
   <head>
-    <title>Triangle Tracker</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" src="script.javascript">
-   </head>
+    <title> Triangle Tracker </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="javascript/script.js">
+    </script>
+  </head>
+  <body background="images/bg3.jpeg">
+    <h1><u>TRIANGLE TRACKER.</u><h1/>
+    <div class="container">
+        <label for="sideA">Length:</label>
+        <input type="number" id="sideA" >
+        <br>
+        <br>
+        <label for="sideB">Width:</label>
+        <input type="number" id="sideB" >
+        <br>
+        <br>
+        <label for="sideC">Height:</label>
+        <input type="number" id="sideC" >
+        <br>
+        <br>
+        <input class="button" type="button" value="Track" onclick="triangleTracker()">
+        <input class="button" type="button" value="Reset" onclick="reset()">
+        <p id="output"></p>
+    </div>
+
+    <div id="info">
+          <div class="col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Equilateral-triangle.svg/70px-Equilateral-triangle.svg.png" alt="Equilateral"><br>"
+            <strong>Equilateral triangle</strong>is a triangle which has sides which are all equal.
+          </div>
+          <div class="col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Triangle.Isosceles.svg/70px-Triangle.Isosceles.svg.png" alt="Isosceles"><br>
+            <strong>Isosceles triangle</strong>is a triangle which two of its sides are equal.
+          </div>
+          <div class="col">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Triangle-scalene.svg/70px-Triangle-scalene.svg.png" alt="Scalene"><br>
+            <strong>Scalene triangle</strong>is a triangle with no equal sides.
+          </div>
+    </div>
+  </body>
+  </html>
